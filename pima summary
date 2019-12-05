@@ -4,5 +4,12 @@ SkinThickness Zero: 227/768
 Insulin Zero: 374/768
 
 
+KNN Accuracy: K=19 (best fit)
+Test Accuracy: 0.7792207792207793
+Train Accuracy: 0.7728119180633147
+
+Decision Tree Accuracy: max_depth=4, impurity= entrophy (best fit)
+Test Accuracy: 0.7705627705627706
+Train Accuracy: 0.7746741154562383
 
 
