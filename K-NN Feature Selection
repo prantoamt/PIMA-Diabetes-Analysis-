@@ -1,0 +1,39 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.ClassifierSubsetEval -B weka.classifiers.lazy.IBk -T -H "Click to set hold out or test instances" -E DEFAULT -- -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     weather-weka.filters.unsupervised.attribute.Remove-R4-5,7
+Instances:    768
+Attributes:   6
+              Pregnancies
+              Glucose
+              BloodPressure
+              BMI
+              Age
+              Outcome
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 17
+	Merit of best subset found:    0    
+
+Attribute Subset Evaluator (supervised, Class (numeric): 6 Outcome):
+	Classifier Subset Evaluator
+	Learning scheme: weka.classifiers.lazy.IBk
+	Scheme options: -K 1 -W 0 -A weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last" 
+	Hold out/test set: Training data
+	Subset evaluation: RMSE
+
+Selected attributes: 2,3,4 : 3
+                     Glucose
+                     BloodPressure
+                     BMI
+
