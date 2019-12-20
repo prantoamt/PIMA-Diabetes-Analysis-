@@ -4,12 +4,36 @@ SkinThickness Zero: 227/768
 Insulin Zero: 374/768
 
 
-KNN Accuracy: K=19 (best fit)
-Test Accuracy: 0.7792207792207793
-Train Accuracy: 0.7728119180633147
+0.770949720670391
+{'n_neighbors': 23}
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=None, n_neighbors=23, p=2,
+           weights='uniform')
 
-Decision Tree Accuracy: max_depth=4, impurity= entrophy (best fit)
-Test Accuracy: 0.7705627705627706
+Test Accuracy: 0.7359307359307359
 Train Accuracy: 0.7746741154562383
+KTH Accuracy: 0.7790055248618785
+
+
+
+
+0.7225325884543762
+{'max_depth': 2}
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=2,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+
+Test Accuracy: 0.7316017316017316
+KTH Test Accuracy: 0.7955801104972375
+Train Accuracy: 0.7560521415270018
+Cross_val: 0.7225325884543762
+
+
+
+
+First of all, we Collected PIMA Dataset from Kaggle. Then Checked for errors in the dataset. There were no major errors in the dataset but the features - Insuline, Skin Thickness, and Diabetes Pedigree Function had a huge number of 0 entries. One way to handle this error is to put mean of those features into the 0 entries. But our aim is to test how stable the model based on this dataset can be on Kurmitola Hospital dataset. So, we removed these three features and worked with rest. Now, Some feature's values are huge in number compared to others. While making prediction with this variations can cause dominating behavior. So, we normalized the features. There are many ways to normalize a dataset. We used one of the popular formula : (current - minimun)/(maximum-minimum)
 
 
