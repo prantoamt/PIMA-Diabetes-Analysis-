@@ -3,20 +3,27 @@ Insulin Zero and SkinThickness Zero: 227/768
 SkinThickness Zero: 227/768
 Insulin Zero: 374/768
 
-
+KNN
 0.770949720670391
 {'n_neighbors': 23}
 KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
            metric_params=None, n_jobs=None, n_neighbors=23, p=2,
            weights='uniform')
 
-Test Accuracy: 0.7359307359307359
 Train Accuracy: 0.7746741154562383
+Test Accuracy: 0.7359307359307359
+Confusion Matrix:
+[[135  22]
+ [ 39  35]]
 KTH Accuracy: 0.7790055248618785
+[[131   0]
+ [ 40  10]]
 
 
 
 
+
+Decision Tree
 0.7225325884543762
 {'max_depth': 2}
 DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=2,
@@ -26,10 +33,39 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=2,
             min_weight_fraction_leaf=0.0, presort=False, random_state=None,
             splitter='best')
 
-Test Accuracy: 0.7316017316017316
-KTH Test Accuracy: 0.7955801104972375
 Train Accuracy: 0.7560521415270018
 Cross_val: 0.7225325884543762
+Test Accuracy: 0.7316017316017316
+[[141  16]
+ [ 46  28]]
+KTH Test Accuracy: 0.7955801104972375
+Confusion Mat:
+[[131   0]
+ [ 37  13]]
+
+
+
+
+
+Naive Bayes:
+GaussianNB
+Train Accuracy: 0.7690875232774674
+Test Accuracy: 0.7316017316017316
+Test set Confusion Mat:
+[[131  26]
+ [ 36  38]]
+
+KTH Accuracy: 0.7845303867403315
+KTH Confusion Mat:
+[[131   0]
+ [ 39  11]]
+
+
+
+
+
+
+
 
 
 
