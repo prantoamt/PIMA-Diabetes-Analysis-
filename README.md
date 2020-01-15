@@ -11,7 +11,7 @@ Scatter with all Attributes |  Scatter with most important atrributes
 
 Decision Tree Accuracy test by varying tree depth | Tree Visualization 
 :-------------------------:|:-------------------------:
-<img src="IMG/Decision Tree Accuracy Variation With Depth.png" width="500" height="300" align="center" /> | <img src="/IMG/tree.png" width="500" height="300" align="center" />
+<img src="IMG/Decision Tree Accuracy with PIMA Dataset Variation With Depth.png" width="500" height="300" align="center" /> | <img src="IMG/tree.png" width="500" height="300" align="center" />
 | |Max Depth: 4 
 | |Impurity Measurement: Entrophy 
 | |Test Accuracy: 0.7705627705627706 
