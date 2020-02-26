@@ -4,20 +4,50 @@ SkinThickness Zero: 227/768
 Insulin Zero: 374/768
 
 KNN
-0.770949720670391
-{'n_neighbors': 23}
+0.776536312849162
+{'n_neighbors': 16}
 KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
-           metric_params=None, n_jobs=None, n_neighbors=23, p=2,
+           metric_params=None, n_jobs=None, n_neighbors=16, p=2,
            weights='uniform')
 
-Train Accuracy: 0.7746741154562383
-Test Accuracy: 0.7359307359307359
+
+Train Accuracy: 0.7821229050279329
+Test Accuracy: 0.7575757575757576
 Confusion Matrix:
-[[135  22]
- [ 39  35]]
-KTH Accuracy: 0.7790055248618785
-[[131   0]
- [ 40  10]]
+[[138  19]
+ [ 37  37]]
+
+Report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.88      0.83       157
+           1       0.66      0.50      0.57        74
+
+   micro avg       0.76      0.76      0.76       231
+   macro avg       0.72      0.69      0.70       231
+weighted avg       0.75      0.76      0.75       231
+
+
+KTH Accuracy: 0.8121546961325967
+[[130   1]
+ [ 33  17]]
+
+Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.99      0.88       131
+           1       0.94      0.34      0.50        50
+
+   micro avg       0.81      0.81      0.81       181
+   macro avg       0.87      0.67      0.69       181
+weighted avg       0.84      0.81      0.78       181
+
+
+
+
+
+
+
 
 
 
@@ -34,14 +64,90 @@ DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=2,
             splitter='best')
 
 Train Accuracy: 0.7560521415270018
-Cross_val: 0.7225325884543762
 Test Accuracy: 0.7316017316017316
 [[141  16]
  [ 46  28]]
+
+Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.90      0.82       157
+           1       0.64      0.38      0.47        74
+
+   micro avg       0.73      0.73      0.73       231
+   macro avg       0.70      0.64      0.65       231
+weighted avg       0.72      0.73      0.71       231
+
+
 KTH Test Accuracy: 0.7955801104972375
 Confusion Mat:
 [[131   0]
  [ 37  13]]
+
+Report:
+              precision    recall  f1-score   support
+
+           0       0.78      1.00      0.88       131
+           1       1.00      0.26      0.41        50
+
+   micro avg       0.80      0.80      0.80       181
+   macro avg       0.89      0.63      0.64       181
+weighted avg       0.84      0.80      0.75       181
+
+
+
+
+
+
+
+
+
+
+
+
+Random Forest:
+{'n_estimators': 800,
+ 'min_samples_split': 10,
+ 'min_samples_leaf': 4,
+ 'max_features': 'sqrt',
+ 'max_depth': 50,
+ 'bootstrap': True}
+
+Train Accuracy: 0.8845437616387337
+Test Accuracy: 0.7792207792207793
+Confusion Matrix:
+[[139  18]
+ [ 33  41]]
+Report:
+             precision    recall  f1-score   support
+
+           0       0.81      0.89      0.84       157
+           1       0.69      0.55      0.62        74
+
+   micro avg       0.78      0.78      0.78       231
+   macro avg       0.75      0.72      0.73       231
+weighted avg       0.77      0.78      0.77       231
+
+
+KTH Test Accuracy: 0.7734806629834254
+Confusion Mat:
+[[119  12]
+ [ 29  21]]
+Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.91      0.85       131
+           1       0.64      0.42      0.51        50
+
+   micro avg       0.77      0.77      0.77       181
+   macro avg       0.72      0.66      0.68       181
+weighted avg       0.76      0.77      0.76       181
+
+
+
+
+
+
 
 
 
@@ -49,18 +155,76 @@ Confusion Mat:
 
 Naive Bayes:
 GaussianNB
-Train Accuracy: 0.7690875232774674
-Test Accuracy: 0.7316017316017316
+Train Accuracy: 0.7746741154562383
+Test Accuracy: 0.7229437229437229
 Test set Confusion Mat:
-[[131  26]
- [ 36  38]]
+[[132  25]
+ [ 39  35]]
 
-KTH Accuracy: 0.7845303867403315
+Report:
+              precision    recall  f1-score   support
+
+           0       0.77      0.84      0.80       157
+           1       0.58      0.47      0.52        74
+
+   micro avg       0.72      0.72      0.72       231
+   macro avg       0.68      0.66      0.66       231
+weighted avg       0.71      0.72      0.71       231
+
+
+KTH Accuracy: 0.7790055248618785
 KTH Confusion Mat:
 [[131   0]
- [ 39  11]]
+ [ 40  10]]
+
+Report:
+              precision    recall  f1-score   support
+
+           0       0.77      1.00      0.87       131
+           1       1.00      0.20      0.33        50
+
+   micro avg       0.78      0.78      0.78       181
+   macro avg       0.88      0.60      0.60       181
+weighted avg       0.83      0.78      0.72       181
 
 
+
+
+
+
+
+
+
+Ensemble learning (Voting Between KNN, Random Forest, Naive Bayes):
+Train Accuracy: 0.8156424581005587
+Test Accuracy: 0.7619047619047619
+Confusion Matrix:
+[[138  19]
+ [ 36  38]]
+Report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.88      0.83       157
+           1       0.67      0.51      0.58        74
+
+   micro avg       0.76      0.76      0.76       231
+   macro avg       0.73      0.70      0.71       231
+weighted avg       0.75      0.76      0.75       231
+
+KTH:
+Accuracy: 0.8121546961325967
+Confusion Matrix:
+[[131   0]
+ [ 34  16]]
+Report:
+              precision    recall  f1-score   support
+
+           0       0.79      1.00      0.89       131
+           1       1.00      0.32      0.48        50
+
+   micro avg       0.81      0.81      0.81       181
+   macro avg       0.90      0.66      0.68       181
+weighted avg       0.85      0.81      0.77       181
 
 
 
