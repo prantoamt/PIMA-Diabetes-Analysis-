@@ -7,7 +7,7 @@
 <img src="IMG/co_relation.png" width="1000" height="600" />
 
 ## Dataset Summary:
-<img src="IMG/Box-plot.png" width="500" height="300" align="center" /> | <img src="/IMG/tree.png" width="500" height="300" align="center" />
+<img src="IMG/Box-plot.png" width="600" height="300" align="center" />
 
 ## Decision Tree:
 
