@@ -10,11 +10,9 @@
 Decision Tree Hyper-parameter Tuning | Tree Visualization 
 :-------------------------:|:-------------------------:
 <img src="IMG/Decision Tree Hyperparameter Tuning.png" width="500" height="300" align="center" /> | <img src="/IMG/tree.png" width="500" height="300" align="center" />
-Max Depth: 2
-Impurity Measurement: Entrophy 
-Test Accuracy: 0.7316017316017316 
-Train Accuracy: 0.7560521415270018 
-Cross Validation Score: 0.7225325884543762
+Max Depth: 2 | Impurity Measurement: Entrophy 
+Test Accuracy: 0.7316017316017316 | Train Accuracy: 0.7560521415270018 
+Cross Validation Score: 0.7225325884543762 | Accuracy on  Kurmitola Hospital: 0.7955801104972375 <br/>
 
 ## K-Nearest Neighbor:
 
@@ -23,7 +21,18 @@ Cross Validation Score: 0.7225325884543762
 Hyper-parameter Tuning
 
 <img src="/IMG/knn Hyperparameter Tuning1.png" width="500" height="300" align="center" />
-K=16 (best fit)
-Test Accuracy: 0.7575757575757576
-Train Accuracy: 0.7821229050279329
-Cross Validation Score: 0.776536312849162
+K=16 (best fit) <br/>
+Test Accuracy: 0.7575757575757576 <br/>
+Train Accuracy: 0.7821229050279329 <br/>
+Cross Validation Score: 0.776536312849162 <br/>
+Accuracy on  Kurmitola Hospital: 0.8121546961325967 <br/>
+
+
+## Naive Bayes:
+
+#### Naive Bayes Accuracy:
+
+Train Accuracy: 0.7746741154562383 <br/>
+Test Accuracy: 0.7229437229437229 <br/>
+KTH Accuracy: 0.7790055248618785
+
