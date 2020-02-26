@@ -53,6 +53,6 @@ KTH Accuracy: 0.7790055248618785
 
 ## Confusion Matrix of classifiers
 
-<img src="IMG/Confusion_Matrix.png" width="800" height="400" align="center />
+<img src="IMG/Confusion_Matrix.png" width="800" height="400" align="center" />
 
 
