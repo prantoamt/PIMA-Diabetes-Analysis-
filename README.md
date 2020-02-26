@@ -51,10 +51,6 @@ Test Accuracy: 0.7229437229437229 <br/>
 KTH Accuracy: 0.7790055248618785
 
 
-## Confusion Matrix of classifiers on PIMA test set
-
-<img src="IMG/Confusion_Matrix.png" width="800" height="400" align="center" />
-
 
 ## Confusion Matrix of classifiers
 
@@ -63,3 +59,8 @@ On PIMA test set | On Kurmitola Hospital Dataset
 <img src="IMG/Confusion_Matrix.png" width="500" height="300" align="center" /> | <img src="/IMG/Confusion_Matrix_KTH.png" width="500" height="300" align="center" />
 
 
+## ROC Curve of classifiers
+
+On PIMA test set | On Kurmitola Hospital Dataset
+:-------------------------:|:-------------------------:
+<img src="IMG/ROC_AUC.png" width="500" height="300" align="center" /> | <img src="/IMG/ROC_AUC_KTH.png" width="500" height="300" align="center" />
