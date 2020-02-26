@@ -3,10 +3,8 @@
 ##### This Repository contains all the experimental reports of analyses on PIMA Indian Diabetes dataset. Based on our own analyses, we built machine learning models using different algorithms such as, K-Nearest Neighbor, Decision Tree, Naive Bayes.
 
 
-## Relations between attributes:
-Scatter with all Attributes |  Scatter with most important atrributes
-:-------------------------:|:-------------------------:
-<img src="IMG/scatter_kaggle_raw.png" width="500" height="400" /> | <img src="IMG/scatter_kaggle_normalized(5 attr).png" width="500" height="400" /> 
+## Relations between attributes: (Correlation Matrix)
+<img src="IMG/co_relation.png" width="1000" height="800" />
 ## Decision Tree:
 
 Decision Tree Accuracy test by varying tree depth | Tree Visualization 
