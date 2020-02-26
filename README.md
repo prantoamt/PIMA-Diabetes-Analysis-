@@ -4,7 +4,7 @@
 
 
 ## Relations between attributes: (Correlation Matrix)
-<img src="IMG/co_relation.png" width="1000" height="800" />
+<img src="IMG/co_relation.png" width="1000" height="600" />
 ## Decision Tree:
 
 Decision Tree Hyper-parameter Tuning | Tree Visualization 
@@ -27,6 +27,20 @@ Train Accuracy: 0.7821229050279329 <br/>
 Cross Validation Score: 0.776536312849162 <br/>
 Accuracy on  Kurmitola Hospital: 0.8121546961325967 <br/>
 
+## Random Forest:
+
+#### Random Forest Accuracy:
+'n_estimators': 800, <br/>
+'min_samples_split': 10, <br/>
+'min_samples_leaf': 4, <br/>
+'max_features': 'sqrt', <br/>
+'max_depth': 50, <br/>
+'bootstrap': True <br/>
+
+Train Accuracy: 0.8845437616387337 <br/>
+Test Accuracy: 0.7792207792207793 <br/>
+Accuracy on Kurmitola Hospital: 0.7734806629834254 <br/>
+
 
 ## Naive Bayes:
 
@@ -35,4 +49,10 @@ Accuracy on  Kurmitola Hospital: 0.8121546961325967 <br/>
 Train Accuracy: 0.7746741154562383 <br/>
 Test Accuracy: 0.7229437229437229 <br/>
 KTH Accuracy: 0.7790055248618785
+
+
+## Confusion Matrix of classifiers
+
+<img src="IMG/Confusion_Matrix.png" width="800" height="400" align="center />
+
 
