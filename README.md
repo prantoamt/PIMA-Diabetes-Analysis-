@@ -52,7 +52,7 @@ KTH Accuracy: 0.7790055248618785
 
 ## Accuracy Comparison:
 
-<img src="IMG/Accuracybar_with_voting.png" width="600" height="400" align="center" />
+<img src="IMG/Accuracybar.png" width="600" height="400" align="center" />
 
 
 
