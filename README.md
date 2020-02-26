@@ -10,21 +10,20 @@
 Decision Tree Hyper-parameter Tuning | Tree Visualization 
 :-------------------------:|:-------------------------:
 <img src="IMG/Decision Tree Hyperparameter Tuning.png" width="500" height="300" align="center" /> | <img src="/IMG/tree.png" width="500" height="300" align="center" />
-| |Max Depth: 4 
-| |Impurity Measurement: Entrophy 
-| |Test Accuracy: 0.7705627705627706 
-| |Train Accuracy: 0.7746741154562383 
-| |Cross Validation Score: 0.7263976240391334
+Max Depth: 2
+Impurity Measurement: Entrophy 
+Test Accuracy: 0.7316017316017316 
+Train Accuracy: 0.7560521415270018 
+Cross Validation Score: 0.7225325884543762
 
 ## K-Nearest Neighbor:
-
 
 #### K-NN accuracy:
 
 Hyper-parameter Tuning
 
 <img src="/IMG/knn Hyperparameter Tuning1.png" width="500" height="300" align="center" />
-| | K=19 (best fit)
-| |Test Accuracy: 0.7792207792207793
-| |Train Accuracy: 0.7728119180633147
-| |Cross Validation Score: 0.7622200263504613
+K=16 (best fit)
+Test Accuracy: 0.7575757575757576
+Train Accuracy: 0.7821229050279329
+Cross Validation Score: 0.776536312849162
